@@ -6,58 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/app_bar_layout" />
+
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Finalizar"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:onClick="cerrarApp"
+        android:text="Finalizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/AcercaDe"
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/Jugar"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:text="JUGAR"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/Config"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Config"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/include"
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Config"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:text="CONFIG"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/AcercaDe"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toEndOf="@+id/AcercaDe"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/Jugar"
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/AcercaDe"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:onClick="mostrar_acercade"
+        android:text="AcercaDe"
+        app:layout_constraintBottom_toTopOf="@+id/Finalizar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/Config"
         app:layout_constraintVertical_bias="0.5" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="729dp"
-        android:layout_height="96dp"
-        android:background="#10A326"
-        android:text="Creciente"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CrecienteMBE"
         tools:targetApi="31">
         <activity
+            android:name=".AcercaDeActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
